@@ -1,3 +1,6 @@
+csdn：https://blog.csdn.net/pengbo6665631/article/details/131551882
+
+掘金：https://juejin.cn/post/7252171043384246331
 # flutter_comment_panel_example
 
 ### A very good comment panel demo!
