@@ -97,10 +97,7 @@ class _CommentDetailPageState extends State<CommentDetailPage> with WidgetsBindi
   Widget _buildTopBarWidget() {
     return Listener(
       behavior: HitTestBehavior.opaque,
-      onPointerMove: (p) {
-        if (!AppGlobal.read<CommentPanelModel>().isDraggable) return;
-        AppGlobal.read<CommentPanelModel>().controller.onChildWidgetPointerMove(p);
-      },
+      onPointerMove: (p) => AppGlobal.read<CommentPanelModel>().controller.onChildWidgetPointerMove(p),
       child: Container(
         height: 57,
         color: Colors.white,

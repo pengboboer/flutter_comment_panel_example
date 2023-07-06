@@ -619,6 +619,7 @@ class _SlidingUpPanelState extends State<SlidingUpPanel> with SingleTickerProvid
   }
 
   void onChildWidgetPointerMove(PointerMoveEvent p) {
+    if (!widget.isDraggable) return;
     _vt.addPosition(p.timeStamp, p.position); // add current position for velocity tracking
     double dy = p.delta.dy;
     // only slide the panel if scrolling is not enabled
